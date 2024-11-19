@@ -1,0 +1,164 @@
+/* Make the UI fill the whole screen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    padding: 10 px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it covers full height */
+}
+
+/* Header styling (like a banner) */
+header {
+    background-color: #4a6fa5; /* Muted blue */
+    color: white;
+    text-align: center;
+    position: relative; /* For positioning the button */
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
+
+/* Position the "New User" button in the top-right corner of the header */
+#newUserBtn {
+    padding: 10px 20px;
+    background-color: #e5e5e5; /* Soft gray */
+    color: #4a6fa5; /* Match header color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#newUserBtn:hover {
+    background-color: #4a6fa5; /* Same blue as header */
+    color: white;
+}
+
+/* Main content (Body) styling */
+main {
+    flex: 1; /* Make the main content take all available space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Container for content */
+.container {
+    width: 100%; /* Full width */
+    max-width: 700px; /* Limit max-width for large screens */
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General button styling */
+button {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 45%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #e5e5e5; /* Soft gray buttons */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #d1d1d1; /* Slightly darker on hover */
+}
+
+/* Form container styling */
+.form-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Check-in/check-out section styling */
+.check-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    display:block;
+    justify-content: space-between;
+}
+
+.check-container input {
+    width: 100%; /* Adjust input width for check-in/check-out */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 25%;
+    margin-top: 10px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4a6fa5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #4a6fa5;
+}
+
+.hidden {
+    display: none;
+}

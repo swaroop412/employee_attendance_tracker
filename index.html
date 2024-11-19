@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>   Attendance Tracker</h1>
+        <button id="newUserBtn">New User</button>
+    </header>
+
+    <!-- Main Section (Body) -->
+    <main>
+        <div class="container">
+            <div id="newUserForm" class="form-container hidden">
+                <h2>Add New User</h2>
+                <input type="text" id="newUsername" placeholder="Enter Name" required>
+                <input type="text" id="newUserId" placeholder="Enter ID" required>
+                <input type="password" id="newUserPin" placeholder="Enter PIN (4 digits)" maxlength="4" required>
+                <button id="addUserBtn">Submit</button>
+                <button id="cancelNewUserBtn">Cancel</button>
+            </div>
+
+            <div class="check-container">
+                <input type="text" id="checkId" placeholder="Enter ID" required>
+                <input type="password" id="checkPin" placeholder="Enter PIN" required>
+                <button id="checkInBtn">Check In</button>
+                <button id="checkOutBtn">Check Out</button>
+            </div>
+
+            <div class="attendance-history">
+                <h2>Attendance Records</h2>
+                <table id="attendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div id="message"></div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Attendance Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
